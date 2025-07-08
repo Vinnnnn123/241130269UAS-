@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+@media screen and max-width(200px) {}

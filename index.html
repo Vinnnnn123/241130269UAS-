@@ -13,37 +13,110 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1>TokoPaedi</h1>
+    <h1>TokePaedi</h1>
     <div class="container">
-      <div class="left">
+      <div class="left-side">
         <div class="item">
-          <div class="img">
-            <img src="./images/produk1.jpg" alt="" />
-          </div>
-          <div class="desc">
-            <p class="title">denkmark backpack</p>
-            <div class="button">
-              <p>+</p>
-              <input type="text" value="0" disabled />
-              <p>-</p>
+          <img width="200" src="./images/produk1.jpg" alt="" />
+          <div class="information">
+            <div class="deskripsi">
+              <strong class="nama">denkmark-backpack</strong>
+              <p>one size</p>
+              <p>cream</p>
             </div>
-            <p class="price" data-price="20">$20</p>
+            <div class="tombol">
+              <button class="kurang">-</button>
+              <input class="total" type="text" value="0" />
+              <button class="tambah">+</button>
+            </div>
+            <div class="div-harga">
+              <span>$</span><strong class="harga">50</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img width="200" src="./images/produk2.jpeg" alt="" />
+          <div class="information">
+            <div class="deskripsi">
+              <strong class="nama">casual backpack</strong>
+              <p>One Size</p>
+              <p>black</p>
+            </div>
+            <div class="tombol">
+              <button class="kurang">-</button>
+              <input class="total" type="text" value="0" />
+              <button class="tambah">+</button>
+            </div>
+            <div class="div-harga">
+              <span>$</span><strong class="harga">50</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img width="200" src="./images/produk3.png" alt="" />
+          <div class="information">
+            <div class="deskripsi">
+              <strong class="nama">Mon backpack</strong>
+              <p>One Size</p>
+              <p>grey</p>
+            </div>
+            <div class="tombol">
+              <button class="kurang">-</button>
+              <input class="total" type="text" value="0" />
+              <button class="tambah">+</button>
+            </div>
+            <div class="div-harga">
+              <span>$</span><strong class="harga">50</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img width="200" src="./images/produk4.jpg" alt="" />
+          <div class="information">
+            <div class="deskripsi">
+              <strong class="nama">tas-01</strong>
+              <p>One Size</p>
+              <p>oooo</p>
+            </div>
+            <div class="tombol">
+              <button class="kurang">-</button>
+              <input class="total" type="text" value="0" />
+              <button class="tambah">+</button>
+            </div>
+            <div class="div-harga">
+              <span>$</span><strong class="harga">50</strong>
+            </div>
           </div>
         </div>
       </div>
-      <div class="right">
-        <div class="main">
-          <p class="title">order summary</p>
-          <input type="email" placeholder="email" />
-          <input type="text" placeholder="password" />
-          <input type="password" placeholder="diskon" />
-          <button type="button">Reset</button>
-          <button type="submit">Apply</button>
-        </div>
-        <div class="info"></div>
+      <div class="right-side">
+        <h2>Order Summary</h2>
+        <form action="#">
+          <input
+            class="nama"
+            value=""
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <input class="password" type="email" placeholder="Email" required />
+          <input
+            class="diskon"
+            value=""
+            type="text"
+            placeholder="kode diskon "
+          />
+          <button class="reset">Reset</button>
+          <button class="apply">Apply</button>
+          <div class="info"></div>
+        </form>
       </div>
     </div>
   </body>
+
   <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
 </html>

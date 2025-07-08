@@ -1,17 +1,155 @@
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    border: none;
     font-family: "Poppins";
+}
+
+body {
+    padding: 0 10px;
+}
+
+
+h1 {
+    color: rgb(47, 245, 47);
 }
 
 .container {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    height: fit-content;
+    padding: 10px;
 }
 
-img {
-    width: 200px;
+.left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 10px;
 }
 
-@media screen and max-width(200px) {}
+.left-side .item {
+    display: flex;
+    padding: 0 20px;
+    gap: 10px;
+    align-items: center;
+    height: fit-content;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.041);
+    border-radius: 20px;
+}
+
+.left-side .information {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deskripsi {
+    height: fit-content;
+}
+
+.tombol {
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+.tombol button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tombol input {
+    max-width: 50px;
+    align-self: stretch;
+    text-align: center;
+}
+
+.harga {
+    height: fit-content;
+}
+
+.right-side {
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+}
+
+.right-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-side input {
+    padding: 15px;
+    background-color: rgba(90, 255, 247, 0.178);
+    border-radius: 10px;
+}
+
+.right-side button {
+    cursor: pointer;
+}
+
+.reset {
+    background-color: rgb(218, 50, 50);
+    border-radius: 10px;
+    padding: 10px 0;
+    color: white;
+}
+
+.apply {
+    border-radius: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: rgb(14, 255, 106);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.flex p {
+    padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .barang {
+        flex-direction: column;
+    }
+
+    .information {
+        margin-bottom: 20px;
+    }
+}
+
+/* android */
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .barang {
+        flex-direction: column;
+    }
+
+    .information {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        padding: 2px;
+    }
+}
